@@ -1,0 +1,58 @@
+Since enemy damage is dependent on how much you killed instead of how much time passed,
+  I wondered how would a (maximum defense + minimum offense) build perform.
+
+Since Agility silently gives damage, I avoided it like a plague.
+I poured atributes in Def (but I imagine Con would be equally as useless).
+Iron Boots is the only sensible choice.
+Since every Secondary gives damage, I must chose the least damaging one,
+  at the time I assumed Agility gives little damage, so I have chosen Eletctic Dagger,
+  but it seems that Agility is almost twice as effective as damage, so Battle Knife is better.
+
+With Battle Knife I have (4 Agi, 10 Dmg) which gave me 0.318 Kills per second.
+You can calculate on your own just how long these runs are,
+  it will be even longer if the game slows down due to max CPU usage...
+
+So that just leaves me with 3 slots to play with (Ring, Primary, Armor), 2 choices in each.
+The 8 resulting choices are (Sorted by Hp per second):
+  Harmony  Healer   Regen
+  Harmony  Healer   Defend
+  Defender Healer   Regen
+  Defender Healer   Defend
+  Harmony  Defender Regen
+  Harmony  Defender Defend
+  Defender Defender Regen
+  Defender Defender Defend
+
+A quick check proved that going all in Hp/Arm regen is a bad idea, so these are off the list:
+  Harmony  Healer   Regen
+  Defender Defender Defend
+(Harmony + Defend) is always better than (Defender + Regen) so these are off the list:
+  Defender Healer   Regen
+  Defender Defender Regen
+
+That leaves me with 4 choices, and I checked them all:
+  Harmony  Healer   Defend
+  Defender Healer   Defend
+  Harmony  Defender Regen
+  Harmony  Defender Defend
+----------------------------------------------------------------
+Def Iron Harmony  Elect  Healer   Defend = 220,687(E1)
+Def Iron Defender Elect  Healer   Defend = 349,748(E2)
+Def Iron Harmony  Elect  Defender Regen  = 341,531(E3)
+Def Iron Harmony  Elect  Defender Defend = 230,970(E4)
+
+Resulting (Kills, Hp) graph is in "TankyElectricDagger.png"
+I kept breaking game records (I can only assume people are not as autistic as I am about this lol)
+But, while this runs were still running, I realized about the effectiveness of Agility,
+  So there are even greater records.
+----------------------------------------------------------------
+Def Iron Harmony  Battle Healer   Defend = ?(B1)
+Def Iron Defender Battle Healer   Defend = ?(B2)
+Def Iron Harmony  Battle Defender Regen  = ?(B3)
+Def Iron Harmony  Battle Defender Defend = ?(B4)
+
+Resulting (Kills, Hp) graph is in "TankyBattleKnife.png"
+Since these are only one runs, better ones exist surely,
+However, I am not going to waste anymore time...
+  These runs took MORE THAN A MONTH!
+Kinda poetic that the biggest record for the "Battleground Legends" is with "Battle Knife"

@@ -1,0 +1,44 @@
+These are the only items I paid attention to
+
+NormalRun:
+  Attributes:
+    Agi(Agility): 1 Con, 31 Agi
+  Boots:
+    Perf(Boots of Perfection): 25 (Con, Def, Str, Agi)
+    Shadow(Shadow Boots):      250 Agi, -25 Hp per dodge
+    Wind(Wind Boots):          100 Agi
+  Ring:
+    Light(Ring of Light):           50 Agi
+    Defender(Ring of the Defender): 2 Arm per sec
+    Harmony(Ring of Harmony):       1% for 1000 Hp per sec
+    Chosen(Ring of the Chosen One): (15 Hp, 10 Arm, 5 Dmg) per sec (50% for opposide effect)
+  Secondary:
+    Aura(Aura Cutter):             50 Agi, 100 Dmg
+    Lord(Dagger of the Dark Lord): 50 Dmg, More kills more Power?
+  Primary:
+    Demon(Sword of the Demon):       250 Dmg, More kills more Hp per sec
+    Legend(Sword of the Legend):     250 Dmg, 50 Agi, (10 Hp, 5 Arm) per dodge
+    Healer(Staff of the Healer):     Hp per sec?
+    Defender(Staff of the Defender): Arm per sec?
+  Armor:
+    Defender(Armor of the Defender):  100 Arm, 3 Arm per sec
+    Regen(Armor of the Regeneration): 100 Arm, 7 Hp per sec
+    Cloud(Cloud Armor):               100 Agi, 50 Arm
+
+TankyRun:
+  Attributes:
+    Def(Defense): 1 Con, 31 Def
+  Boots:
+    Iron(Iron Boots):          2 Def, 4 Agi
+  Ring:
+    Defender(Ring of the Defender): 2 Arm per sec
+    Harmony(Ring of Harmony):       1% for 1000 Hp per sec
+  Secondary:
+    Elect(Electric Dagger):        7 Agi, 8 Dmg
+    Battle(Battle Knife):          10 (Arm, Dmg)
+  Primary:
+    Healer(Staff of the Healer):     Hp per sec?
+    Defender(Staff of the Defender): Arm per sec?
+  Armor:
+    Defender(Armor of the Defender):  100 Arm, 3 Arm per sec
+    Regen(Armor of the Regeneration): 100 Arm, 7 Hp per sec

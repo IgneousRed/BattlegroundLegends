@@ -1,0 +1,33 @@
+My (Normal) Highscore: Agi, Wind, Chosen, Aura, Healer, Cloud = 95,150
+
+These results shows my highest score for each item set.
+The number in the brackets is how many times I did the run.
+I didn't count bad starts (due to Shadow/Chosen for example).
+----------------------------------------------------------------
+Def Perf   Chosen Aura Healer   Defend = 53,069(5)
+Def Perf   Chosen Aura Healer   Cloud  = 63,993(5)
+Agi Shadow Chosen Aura Demon    Defend = 44,710(8)
+Agi Shadow Chosen Aura Demon    Regen  = 54,846(8)
+Agi Shadow Chosen Aura Legend   Regen  = 21,859(8)
+Agi Shadow Chosen Aura Healer   Defend = 57,196(8)
+Agi Shadow Chosen Aura Healer   Regen  = 67,302(8)
+Agi Shadow Chosen Aura Healer   Cloud  = 45,126(8)
+Agi Shadow Chosen Lord Healer   Defend = 52,999(8)
+Agi Shadow Chosen Lord Healer   Regen  = 49,230(8)
+Agi Shadow Chosen Lord Healer   Cloud  = 40,726(8)
+Agi Wind   Chosen Aura Demon    Defend = 63,768(16)
+Agi Wind   Chosen Aura Demon    Regen  = 55,741(16)
+Agi Wind   Chosen Aura Demon    Cloud  = 77,815(16)
+Agi Wind   Chosen Aura Legend   Defend = 73,398(16)
+Agi Wind   Chosen Aura Legend   Regen  = 64,198(16)
+Agi Wind   Chosen Aura Legend   Cloud  = 73,168(16)
+Agi Wind   Chosen Aura Healer   Defend = 77,883(16)
+Agi Wind   Chosen Aura Healer   Regen  = 70,433(16)
+Agi Wind   Chosen Aura Healer   Cloud  = 95,150(16)
+Agi Wind   Chosen Aura Defender Defend = 54,314(16)
+Agi Wind   Chosen Aura Defender Regen  = 56,442(16)
+Agi Wind   Chosen Aura Defender Cloud  = 60,864(16)
+----------------------------------------------------------------
+Even tho I love the concept of Shadow Boots, they are not good. big sad :/
+Perfect Boots seems to not be that perfect.
+The cursed items (negative stats per sec) are just bad, that is why I did not included them here.
