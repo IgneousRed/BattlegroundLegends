@@ -32,6 +32,7 @@ It seems that Agility is roughly 1.8188101015 times effective than Damage for Kp
 Interestingly tho, on my tanky runs, the Kps seems to be lower than it should be.
 
 Battle Knife runs: 1.054 > 0.318 Kps
-Did not mesure actual Kps for Electric Dagger.
+Did not measure actual Kps for Electric Dagger.
 
 This may be caused due to rounding down, as Kills are an integer value.
+But who knows.
