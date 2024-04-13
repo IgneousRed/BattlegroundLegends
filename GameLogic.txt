@@ -1,26 +1,26 @@
 All of this is what my testing suggests to me, take it with a grain of salt.
 
 Damage:
-  All damage delt seems to be randomised between 0 and some amount.
-
-Agility:
-  Dictated how much you dodge, the formula being:
-    DodgeChance = Agility / (Agility + 100)
-  Increases how much damage you deal, and it is almost 2 times as effective as Damage.
+  All damage dealt seems to be randomised between 0 and some amount.
 
 Enemy Damage:
   I assumed that it depends on the game duration... That is not true.
   Instead it only seems to be increasing with enemies killed, the formula being:
-    EnemyDamage = (killed^2 + K) * K
-  This makes "glass cannon" bulds just bad, very sad. :[
-  It also makes the battle duration vary wildly (very wildly if you do what I did).
+    EnemyDamage = killed ^ 2 * K1 + K2
+  This makes "glass cannon" builds just bad, very sad. :[
+  It also makes the battle duration vary wildly (very wildly doing what I did).
+
+Agility:
+  Dictates how much you dodge, the formula being:
+    DodgeChance = Agility / (Agility + 100)
+  Increases damage you deal, and it is almost 2 times as effective as Damage.
 
 Armor:
-  If the enemy attack is not dodged, one of the following happends:
-    the damage is nullified
-    reduces armor by 1
+  If the enemy attack is not dodged, one of the following happens:
+    the damage is nullified, may also reduce your armor by 1
     damages the Hp, but not for the full amount
   The more armor you have the more effective it is at saving Hp.
+    Seems like the relationship is linear...
 
 Repeatability:
   It seems to me that if you choose same items,
@@ -31,4 +31,4 @@ Repeatability:
 CheatEngine:
   For some reason, all visible values are read/written as `x * 8 + 6`.
   So in CE they will have larger values than in the game.
-  Carefully multiply by 8 then add 6 before writing, as the game would crash otherwise.
+  Carefully calculate before writing, as the game would crash otherwise.

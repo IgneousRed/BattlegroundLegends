@@ -5,6 +5,9 @@ from PIL import Image, ImageDraw, ImageFont
 # Using Cheat Engine I stopped multiple runs on the same Kill count
 # Armor is increasing linearly, so I didn't bother recording it
 
+# If you wish to use graph() yourself, change the # Modify lines
+# Dont forget to bring Font.ttf with you
+
 ElectricDagger = {
   "x": [
     0,      10385,  20449,  42502,  53708,  70969,  89784,
@@ -50,7 +53,9 @@ BattleKnife = {
     128406, 149423, 179176, 200895, 221791, 241865,
     262177, 283344, 303943, 332629, 356484, 379115,
     406138, 428983, 454559, 487290, 509164, 530464,
-    555697,
+    555697, 581846, 601913, 624369, 651049, 675720,
+    697505, 721574, 742309, 762662, 784415, 805213,
+    817496,
   ],
   "group": [
     {
@@ -68,7 +73,8 @@ BattleKnife = {
         17028008, 19319205, 22109807, 23859410, 25294860, 26727099,
         27672447, 28820775, 29533650, 30736103, 31197820, 31498253,
         31713481, 31840773, 31427867, 30108679, 29244268, 28211968,
-        26442770,
+        26442770, 24573219, 23458403, 21687631, 19297980, 16833403,
+        14263212, 11475340, 8728507,  6461456,  2942861,  0,
       ],
     }, {
       "name": "B3",
@@ -77,7 +83,9 @@ BattleKnife = {
         5812104,  6585383,  7548720,  8146648,  8658494,  9109038,
         9461376,  9675828,  10118052, 10539159, 10580075, 10606491,
         10416807, 10591608, 10307343, 10131034, 9719297,  9214354,
-        9047506,
+        9047506,  8580420,  7810576,  7260564,  6455714,  5810407,
+        5006807,  4338310,  3674984,  2761032,  1835323,  915013,
+        0,
       ],
     }, {
       "name": "B4",
@@ -86,16 +94,13 @@ BattleKnife = {
         2983262,  3368353,  3765736,  3935344,  4160857,  4276248,
         4316882,  4314124,  4317538,  4199293,  4125160,  3917204,
         3591825,  3392791,  3054416,  2517239,  1913107,  1517033,
-        908429,
+        908429,   0,
       ],
     },
   ],
 }
 
-# BattleKnife(807018) (target - current) / 1148
-#   555697
-
-def runToPng(name, imgSize, data):
+def graph(name, imgSize, data):
   # Ensure data points and quadratic curve is in frame
   frameX, frameY = 0.0, 0.0
   for d in data:
@@ -105,12 +110,12 @@ def runToPng(name, imgSize, data):
       peakX = b / a / -2
       frameX = max(frameX, (peakX ** 2 - c / a) ** .5 + peakX)
       frameY = max(frameY, max(g["y"]), (a * peakX + b) * peakX + c)
-  print(frameX, frameY)
+  print("FrameSize: ({}, {})".format(frameX, frameY))
 
   # Drawing
   image = Image.new("RGB", (imgSize, imgSize), (64, 64, 64))
-  font = ImageFont.truetype("Font.ttf", int(imgSize / 32))
   draw = ImageDraw.Draw(image)
+  font = ImageFont.truetype("Graphs/Font.ttf", int(imgSize / 32)) # Modify
   hue = 0.0
   for d in data:
     x = [x / frameX * imgSize for x in d["x"]]
@@ -143,11 +148,10 @@ def runToPng(name, imgSize, data):
       draw.text((peakX, peakY + imgSize / 64), g["name"], col, font, "mm",
                 stroke_width=int(imgSize / 512), stroke_fill=(0, 0, 0))
 
-      # Change hue by Phi (the most irrational number)
+      # Change hue by Phi (the most irrational, and most beautiful)
       hue += 5 ** .5 * .5 + .5
-  image.save(name + ".png")
+  image.save("Graphs/" + name + ".png") # Modify
 
-runToPng("TankyElectricDagger", 1024, [ElectricDagger])
-runToPng("TankyBattleKnife", 1024, [BattleKnife])
-# runToPng("TankyRuns", 1024, [BattleKnife, ElectricDagger])
-runToPng("TankyRuns", 1024, [ElectricDagger, BattleKnife])
+graph("BattleKnife", 1024, [BattleKnife])
+graph("Both", 1024, [BattleKnife, ElectricDagger])
+graph("ElectricDagger", 1024, [ElectricDagger])

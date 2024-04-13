@@ -1,4 +1,5 @@
-Using Cheat Engine I was able to finetune values and check the results
+Using Cheat Engine I was able to fine-tune values and check the results.
+I used Dodges to measure Seconds as the game slows down if CPU is busy.
 
 Agility  Damage  Killed  Dodged  Second  Kps
 0        0       0       0       5240    0
@@ -16,8 +17,7 @@ Second = Dodged / DodgePrSec
 DodgePrSec = DodgeChance * 2{Ticks per second}
 DodgeChance = Agility / (Agility + 100)
 ----------------------------------------------------------------
-I did 10 separate tests is to see if Kps is greater if there is both Agility and Damage,
-that does not seem to be the case, it seems the formula is:
+It seems the formula is:
 Kps = Damage * Kd + Agility * Ka
 
 Only considering cases where Damage = 0,
@@ -27,12 +27,12 @@ Considering the cases where Damage != 0,
 subtracting the assumed Ka,
 the average Kd = 0.06104162997
 
-It seems that Agility is roughly 1.8188101015 times effective than Damage for Kps.
+It seems that Agility gives roughly 1.8188101015 times more Kps than Damage.
 ----------------------------------------------------------------
-Interestingly tho, on my tanky runs, the Kps seems to be lower than it should be.
+Interestingly, on my tanky runs, the Kps seems to be lower than it should be.
 
-Battle Knife runs: 1.054 > 0.318 Kps
-Did not measure actual Kps for Electric Dagger.
+Battle Knife runs:    1.054 -> 0.318; 3.3144654088 lower
+Electric Dagger runs: 1.710 -> 0.811; 2.1085080148 lower
 
 This may be caused due to rounding down, as Kills are an integer value.
-But who knows.
+But, who knows.

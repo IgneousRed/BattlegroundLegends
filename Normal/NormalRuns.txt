@@ -30,4 +30,4 @@ Agi Wind   Chosen Aura Defender Cloud  = 60,864(16)
 ----------------------------------------------------------------
 Even tho I love the concept of Shadow Boots, they are not good. big sad :/
 Perfect Boots seems to not be that perfect.
-The cursed items (negative stats per sec) are just bad, that is why I did not included them here.
+The cursed items (negative stats per sec) are just bad.

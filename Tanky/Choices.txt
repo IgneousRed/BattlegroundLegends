@@ -1,0 +1,19 @@
+I think only these choices are contenders for HS:
+
+Attributes:
+  Con(Constitution): 32 Con
+  Def(Defense): 1 Con, 31 Def
+Boots:
+  Iron(Iron Boots):          2 Def, 4 Agi
+Ring:
+  Defender(Ring of the Defender): 2 Arm per sec
+  Harmony(Ring of Harmony):       1% for 1000 Hp per sec
+Secondary:
+  Elect(Electric Dagger):        7 Agi, 8 Dmg
+  Battle(Battle Knife):          10 (Arm, Dmg)
+Primary:
+  Healer(Staff of the Healer):     Hp per sec
+  Defender(Staff of the Defender): Arm per sec
+Armor:
+  Defender(Armor of the Defender):  100 Arm, 3 Arm per sec
+  Regen(Armor of the Regeneration): 100 Arm, 7 Hp per sec
