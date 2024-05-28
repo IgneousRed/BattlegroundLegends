@@ -8,7 +8,7 @@ Normal run: 95,150 kills
 
 Tanky run: 817,496 kills
 
-## Script for run graphing (Kills, Hp)
+## Script for creating run graphs (Kills, Hp)
 Take a look at my beautiful graphs
 
 ## PRs
